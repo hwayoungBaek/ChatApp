@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity"
+    android:layout_centerVertical="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/loginActivity_edittext_id"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="0dp"
+            android:hint="ID"
+            android:singleLine="false"
+            android:textColor="#ffffff"
+            tools:autoText="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp">
+
+        <EditText
+            android:id="@+id/loginActivity_edittext_password"
+            android:layout_width="207dp"
+            android:layout_height="42dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginActivity_button_login"
+        android:layout_width="229dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/login_btn" />
+
+    <Button
+
+        android:id="@+id/loginActivity_button_signup"
+        android:layout_width="133dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginActivity_button_login"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="-141dp"
+        android:background="#00ff0000"
+        android:text="회원가입"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
+
+    <!--inputType="textPassword"는 패스워드를 입력할 때 동그라미로 암호화를 시켜주는 아이이당!!!-->

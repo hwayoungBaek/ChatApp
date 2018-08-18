@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="240dp"
+    android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        android:background="#ffffff"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:src="@drawable/tapmenu01" />
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp" />
+
+    <Button
+        android:id="@+id/room_out"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Out"
+        android:textSize="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/callTaxi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Taxi"
+        android:textSize="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp" />
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Cal"
+        android:textSize="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="64dp" />
+
+    <EditText
+        android:id="@+id/DepartArrival"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/map"
+        android:background="@drawable/tapmenu02"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/tap_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="213dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DepartArrival"
+        android:background="#ffffff"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:textAlignment="center">
+
+    </ListView>
+
+
+</RelativeLayout>

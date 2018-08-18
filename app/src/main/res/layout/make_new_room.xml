@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:background="@drawable/main01"
+        android:layout_height="46dp"
+        android:layout_width="match_parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        class="com.google.android.gms.maps.MapFragment"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="109dp"
+            android:layout_height="37dp"
+            android:background="@drawable/makenewroom_timeview"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="168dp"
+            android:layout_height="37dp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toEndOf="@+id/textView2"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="설정하기"
+            android:textSize="17sp"
+            android:visibility="visible" />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout2"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/layout1">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="112dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:background="@drawable/makenewroom_departure"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <Spinner
+            android:id="@+id/departure"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="138dp"
+            android:layout_marginEnd="50dp"
+            android:text="출발지" />
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/layout3"
+    android:gravity="center"
+    android:layout_below="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="113dp"
+        android:layout_height = "37dp"
+        android:background="@drawable/makenewroom_destination"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/arrival"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/departure"
+            android:layout_marginBottom="90dp"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout3"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="113dp"
+            android:layout_height="37dp"
+            android:text="내가 더내요"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="168dp"
+            android:layout_height="37dp"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView2"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/cashSpinner"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/cashSpinner"
+                android:layout_marginBottom="90dp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/makenewroom_create" />
+
+
+
+
+</RelativeLayout>
+

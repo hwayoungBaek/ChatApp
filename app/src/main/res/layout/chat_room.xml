@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- main content -->
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tv_dep"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/chatroom01"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="88dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="296dp"
+            android:background="@drawable/chatroom02"
+            android:onClick="onBtnSendClicked" />
+
+        <TextView
+            android:id="@+id/tv_dep"
+            android:layout_width="154dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tv_des"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/chatroom05"
+            android:contentDescription="center"
+            android:paddingTop="15dp"
+            android:textAlignment="center"
+            android:textColor="#148FD5" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="159dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="66dp"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/chatroom06"
+            android:contentDescription="center"
+            android:paddingTop="13dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="127dp"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/main01" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="294dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/chatroom04"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <!-- tapMenu -->
+    <include layout="@layout/activity_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
+

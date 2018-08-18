@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="map_departure">
+        <item>인천대 입구</item>
+        <item>인천대 정문</item>
+        <item>인천대 자연과학대</item>
+        <item>인천대 공대</item>
+        <item>캠퍼스타운역</item>
+        <item>지식정보단지역</item>
+        <item>테크노파크역</item>
+        <item>동막역</item>
+        <item>선학역</item>
+        <item>해양경찰청</item>
+    </string-array>
+
+    <string-array name="map_arrival">
+        <item>인천대 입구</item>
+        <item>인천대 정문</item>
+        <item>인천대 자연과학대</item>
+        <item>인천대 공대</item>
+        <item>캠퍼스타운역</item>
+        <item>지식정보단지역</item>
+        <item>테크노파크역</item>
+        <item>동막역</item>
+        <item>선학역</item>
+        <item>해양경찰청</item>
+    </string-array>
+
+    <string-array name="departure_marker">
+        <item>인천대입구 2번출구</item>
+        <item>정문 건너편</item>
+        <item>자연과학대 건너편</item>
+        <item>공대 건너편</item>
+        <item>캠퍼스타운 1번출구</item>
+        <item>지식정보단지 3번출구</item>
+        <item>테크노파크 3번출구</item>
+        <item>동막역 3번출구</item>
+        <item>선학역 3번출구</item>
+        <item>해경 KEB 외환은행</item>
+    </string-array>
+
+    <string-array name="arrival_marker">
+        <item>인천대입구 1번출구</item>
+        <item>정문</item>
+        <item>자연과학대</item>
+        <item>공대</item>
+        <item>캠퍼스타운 2번출구</item>
+        <item>지식정보단지 2번출구</item>
+        <item>테크노파크 2번출구</item>
+        <item>동막역 2번출구</item>
+        <item>선학역 2번출구</item>
+        <item>해경 KEB 외환은행 건너편</item>
+    </string-array>
+
+    <string-array name="cash">
+        <item>0원</item>
+        <item>1000원</item>
+        <item>2000원</item>
+        <item>3000원</item>
+        <item>4000원</item>
+        <item>5000원</item>
+    </string-array>
+
+</resources>

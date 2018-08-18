@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.hwayoung.chatapp"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    //implementation 'com.android.support:support-v7:27.1.1'
+    implementation 'com.android.support:support-media-compat:27.1.1'
+    //빨간 줄 뜨는데 돼,,,,
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    testImplementation 'junit:junit:4.12'
+    //implementation 'com.android.support:appcompat-v7:27.1.*'
+    //implementation 'com.android.support:recyclerview-v7:27.1.*' 이렇게 쓰면 안돼 ㅠㅠ
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //implementation 'com.google.android.gms:play-services-maps:1.2.1'  // 이거 안됨
+
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.google.firebase:firebase-config:11.8.0' // remote config 사용할 때 쓰는 dependency
+    implementation 'com.google.firebase:firebase-auth:11.8.0' // 사용자 회원가입, 로그인을 위한 dependency
+    implementation 'com.google.firebase:firebase-storage:11.8.0'// firebase 저장소 사용을 위한 dependency
+    implementation 'com.google.android.gms:play-services-maps:11.8.0' // firebase version이랑 맞춰야한다길래
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'  // 채팅 방 리스트 보여주려고 채팅 보내기도하고
+
+    implementation 'com.android.support:design:27.1.0' // Tab
+}
+
+apply plugin: 'com.google.gms.google-services'

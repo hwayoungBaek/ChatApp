@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hwayoung.chatapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Mo2JaYo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBl0jtwr6qNIt58VnRRWYSFUAViRGvY3vs" />
+        !-- 시작 액티비티 = 스플래쉬 !-->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatRoom" />
+        <activity android:name=".MakeNewRoom" />
+        <activity android:name=".ListChatRoom" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".SearchRoom" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PopupActivity" />
+        <activity android:name=".PopupActivity2" />
+        <activity android:name=".UserInfoActivity"></activity>
+    </application>
+
+</manifest>

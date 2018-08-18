@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "935052094862",
+    "firebase_url": "https://fir-test-cb922.firebaseio.com",
+    "project_id": "fir-test-cb922",
+    "storage_bucket": "fir-test-cb922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935052094862:android:4e1539072ab2f22c",
+        "android_client_info": {
+          "package_name": "com.example.hwayoung.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935052094862-nvj2r4jbo21gvdj1grim4o5hol5dbesr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hwayoung.chatapp",
+            "certificate_hash": "3a5e76b78a615f043c0abf428e30a63d97bbb728"
+          }
+        },
+        {
+          "client_id": "935052094862-o35466qt23l9eemn1djnc9u6gv5ns4ik.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "935052094862-o35466qt23l9eemn1djnc9u6gv5ns4ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV_xtakaDWDkM-DIod64iyrMLNLzvSjJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935052094862-o35466qt23l9eemn1djnc9u6gv5ns4ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
